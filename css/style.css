@@ -1,0 +1,335 @@
+/*---GLOBAL---*/
+
+
+/* adjusts for margins and padding in the grid. */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: 'Barrio';
+	font-size: 3em;
+}
+
+h2 {
+	font-family: 'Architects Daughter';
+	font-size: 1.5em;
+}
+
+p {
+	font-family: 'Architects Daughter';
+	font-size: 1em;
+	margin-left: 450px;
+	padding-top: 100px;
+	margin-right: 450px;
+	line-height: 2.25;
+	letter-spacing: 1.15;
+}
+
+.indent {
+	margin-left: 485px;
+	margin-right: 350px;
+}
+
+a {
+	color: #fff;
+	font-family: 'Architects Daughter';
+	text-decoration: none;
+}
+
+section {
+	height: 100vh;
+	position: relative;
+	margin: 0;
+	margin-bottom: -16;
+}
+
+
+/*---ABSOLUTELY POSITIONED---*/
+
+.rightCornerTriangle {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.upperLeft {
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+
+.positiveRotation {
+	transform: rotateZ(8deg);
+}
+
+.slightPositiveRotation {
+	transform: rotateZ(4deg);
+}
+
+.negativeRotation {
+	transform: rotateZ(-10deg);
+}
+
+.slightNegativeRotation {
+	transform: rotateZ(-4deg);
+}
+
+.lowerLeft {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.lowerRight {
+	position: absolute;
+	bottom: 0;
+	right: 250;
+	max-width: 50%;
+	z-index: 10;
+}
+
+.photoStuckTopLeft {
+	width: 350px;
+	position: absolute;
+	top: 75;
+	left: 60;
+	z-index: 5;
+}
+
+.photoStuckLowerLeft {
+	width: 400px;
+	position: absolute;
+	bottom: 60;
+	left: 50;
+	z-index: 5;
+}
+
+.photoStuckLowerRight {
+	width: 400px;
+	position: absolute;
+	bottom: 75;
+	right: 250;
+	z-index: 5;
+}
+
+.smaller {
+	width: 275px;
+}
+
+.smallerTopLeft {
+	top: 65;
+	left: 70;
+}
+
+.larger {
+	width: 650px;
+}
+
+.largerTopLeft {
+	top: 40;
+	left: 20;
+}
+
+.tapeBottomRightCorner {
+	right: 350;
+	bottom: 100;
+}
+
+
+/*---NAVIGATION---*/
+
+
+.navSplat {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 125;
+}
+
+nav {
+	position: fixed;
+	top: 5;
+	right: 60;
+	z-index: 150;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul {
+
+}
+
+nav li {
+	list-style-type: none;
+	display: inline-block;
+	font-size: 1em;
+	letter-spacing: 1.75;
+	padding: 6;
+	transform: rotateZ(20deg);
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 1.25em;
+}
+
+nav p {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*---COVER PAGE---*/
+
+
+#coverPage {
+	background-color: #fff;
+	/*background-image: url('../img/house1bw.jpg');*/
+	background-image: url('../img/coverBG.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.topLeftHeader {
+	position: absolute;
+	top: 60;
+	left: 100;
+	z-index: 25;
+	transform: rotateZ(-9deg);
+}
+
+header {
+	margin: 0;
+	padding: 0;
+}
+
+header h1, h2 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+header h1 {
+	font-size: 5em;
+}
+
+header h2 {
+	font-size: 1.15em;
+	text-align: right;
+	letter-spacing: 1.75;
+}
+
+.coverP {
+	padding-top: 225px;
+	margin-left: 120px;
+	color: #fff;
+	font-size: 1.15em;
+	line-height: 1.75;
+	transform: rotateZ(-9deg);
+}
+
+/*---SECTION TWO---*/
+
+#two p {
+	padding-top: 30;
+}
+
+/*---SECTION THREE---*/
+
+#three p {
+	padding-top: 400px;
+	margin-left: 750px;
+	margin-right: 100px;
+}
+
+/*---SECTION FOUR---*/
+
+#four p {
+/*	padding-top: 300px;
+	margin-left: 750px;
+	margin-right: 100px;*/
+	transform: rotateZ(-3deg);
+	position: absolute;
+	bottom: 50;
+	left: 300;
+	margin: 0 200 0 30;
+}
+
+/*---SECTION SIX---*/
+
+
+#six {
+	margin-bottom: 0;
+}
+
+#six p {
+	/*margin-left: 300px;*/
+	/*padding-top: 100px;*/
+	/*margin-right: 460px;*/
+	line-height: 2;
+	position: absolute;
+	top: -30;
+	left: 135;
+	margin-right: 400px;
+	transform: rotateZ(7deg);
+}
+
+
+/*---CREDITS---*/
+
+
+#credits {
+	height: 400px;
+	z-index: 200;
+	background-image: url('../img/spot.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: -100;
+}
+
+#credits a {
+	color: #555;
+}
+
+#credits h2 {
+	color: #000;
+}
+
+#credits p {
+	margin: 0;
+	padding: 0;
+}
+
+.column {
+	float: left;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	padding-top: 200px;
+}
+
+.columnOne {
+	/*background-color: #444;*/
+	clear: left;
+	margin-left: 70px;
+}
+
+.columnTwo {
+	/*background-color: #666;*/
+	margin-left: -200px;
+}
+
+
+
+
